@@ -1,10 +1,9 @@
 <header class="sticky-header">
-	<p class="header-text">portfolio | rou-kay-uh-too fey</p>
+	<p class="header-text">portfolio | roo-kay-uh-too fay</p>
 	<ul class="header-links">
 		<li><a href="#about">about</a></li>
 		<li><a href="#works">works</a></li>
-        <li><a href="#contact">info</a></li>
-
+		<li><a href="#contact">contact</a></li>
 	</ul>
 </header>
 
@@ -41,9 +40,16 @@
 </div>
 
 <div id="works" class="works-block">
-    <p>
-        yadada
-    </p>
+	<p>yadada</p>
+</div>
+
+<div id="contact" class="contact-block">
+	<h2>Rokheyatou Faye</h2>
+	<a href="mailto:rfaye@ufl.edu">rfaye@ufl.edu</a>
+	<br /> <br />
+	<a href="https://www.instagram.com/p/DF51aRpvN4M/">Instagram</a>
+	<br /> <br />
+	<a href="https://www.linkedin.com/in/roxie-faye/">LinkedIn</a>
 </div>
 
 <style>
@@ -167,6 +173,22 @@
 		width: 65%;
 		font-size: xx-large;
 		font-weight: 600;
+		color: white;
+	}
+
+	.works-block {
+		background-color: white;
+	}
+
+	.contact-block {
+		background-color: black;
+		color: white;
+		font-family: 'Google Sans', sans-serif;
+		padding: 2rem;
+		left: 5%;
+	}
+
+	.contact-block a {
 		color: white;
 	}
 </style>
