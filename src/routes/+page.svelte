@@ -1,9 +1,10 @@
 <header class="sticky-header">
-	<h1 class="header-text">portfolio | rou-kay-uh-too fey</h1>
+	<p class="header-text">portfolio | rou-kay-uh-too fey</p>
 	<ul class="header-links">
-		<li><h1><a href="#contact">info</a></h1></li>
-		<li><h1><a href="#works">works</a></h1></li>
-		<li><h1><a href="#about">about</a></h1></li>
+		<li><a href="#about">about</a></li>
+		<li><a href="#works">works</a></li>
+        <li><a href="#contact">info</a></li>
+
 	</ul>
 </header>
 
@@ -27,80 +28,80 @@
 		My name is Rokheyatou Faye. I am a mechanical engineer and visual artist working at the
 		intersection of design, visual systems, and storytelling.
 
-		<br /> <br/>
+		<br /> <br />
 
 		My practice moves between systems-driven thinking and creative intuition that is shaped by a
 		background in engineering, studio art, and cultural institutions.
 
-		<br /> <br/>
+		<br /> <br />
 
 		I build, question, prototype, and refine through an exploration of the material world to examine
 		how form, function, and meaning coexist.
 	</p>
 </div>
 
+<div id="works" class="works-block">
+    <p>
+        yadada
+    </p>
+</div>
+
 <style>
 	.sticky-header {
-		/* position: sticky; */
+		position: static;
 		top: 0;
-		z-index: 5;
-		/* background-color: gray; */
-		/* backdrop-filter: blur(20px); */
-		font-size: clamp(5px, 2vh, 50px);
-		font-family: 'Google Sans', sans-serif;
-		font-weight: 900;
-		overflow-x: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-        height: clamp(5rem, 1vh, 7rem)
+		padding-inline: clamp(0.5rem, 4vw, 3rem);
+		gap: clamp(1rem, 6vw, 4rem);
+
+		font-size: clamp(0.25rem, 3vw, 2rem);
+		height: clamp(0.5rem, 10vh, 7rem);
+
+		font-family: 'Google Sans', sans-serif;
+		font-weight: 600;
+		/* overflow: hidden; */
 	}
 
 	.header-text {
-		position: relative;
-		left: 2%;
-		line-height: 0.5;
+		white-space: nowrap;
+		line-height: 1;
 		color: white;
-		display: inline-block;
 	}
 
 	.header-links {
-		position: relative;
-		list-style-type: none;
+		display: flex;
+		gap: clamp(0.5rem, 3vw, 2rem);
+		list-style: none;
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
-		/* border: 3px solid red; */
-		float: right;
-		right: 1vw;
-		line-height: 0.5;
-	}
-
-	.header-links li {
-		float: right;
-		display: block;
-		color: white;
-		text-align: center;
-		padding-left: 2vw;
-		padding-right: 2vw;
-		text-decoration: none;
 	}
 
 	.header-links li a {
 		color: white;
 		text-decoration: none;
+		white-space: nowrap;
+		font-size: inherit;
+		/* FIX 1: Provide a reference point for the absolute underline */
 		position: relative;
-		display: inline-block;
+		display: inline-block; /* Helps with alignment and padding */
 	}
+
 	.header-links li a::after {
 		content: '';
 		position: absolute;
 		left: 0;
-		bottom: -12px;
+		/* FIX 2: Bring it closer so overflow:hidden doesn't cut it off, 
+       or adjust the header height/padding */
+		bottom: -4px;
 		width: 100%;
-		transform: scaleX(0);
 		height: 4px;
 		background-color: white;
+		transform: scaleX(0);
 		transform-origin: bottom left;
-		transition: transform 0.12s ease-in-out;
+		transition: transform 0.25s ease-in-out; /* Slowed down slightly for better visibility */
 	}
 
 	.header-links li a:hover::after {
@@ -108,7 +109,7 @@
 		transform-origin: bottom left;
 	}
 
-	.header-links li:visited {
+	.header-links li a:visited {
 		text-decoration: none;
 		color: white;
 	}
@@ -152,20 +153,20 @@
 		/* border: 5px solid pink; */
 		width: 40%;
 		left: 55%;
-		top: clamp(4rem, 12vw, 7rem);
+		top: clamp(5.5rem, 12vw, 10rem);
 	}
 
 	.about-me-block {
 		position: relative;
-		margin-top:300px;
-        font-family: 'Google Sans', sans-serif;
+		margin-top: 300px;
+		font-family: 'Google Sans', sans-serif;
 
-        /* border: 3px solid red; */
-        
-        left: 2%;
-        width: 65%;
-        font-size:xx-large;
-        font-weight: 600;
-        color: white;
+		/* border: 3px solid red; */
+
+		left: 2%;
+		width: 65%;
+		font-size: xx-large;
+		font-weight: 600;
+		color: white;
 	}
 </style>
