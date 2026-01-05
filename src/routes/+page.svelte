@@ -27,12 +27,12 @@
 		My name is Rokheyatou Faye. I am a mechanical engineer and visual artist working at the
 		intersection of design, visual systems, and storytelling.
 
-		<br />
+		<br /> <br/>
 
 		My practice moves between systems-driven thinking and creative intuition that is shaped by a
 		background in engineering, studio art, and cultural institutions.
 
-		<br />
+		<br /> <br/>
 
 		I build, question, prototype, and refine through an exploration of the material world to examine
 		how form, function, and meaning coexist.
@@ -46,10 +46,12 @@
 		z-index: 5;
 		/* background-color: gray; */
 		/* backdrop-filter: blur(20px); */
-		font-size: 2vh;
+		font-size: clamp(5px, 2vh, 50px);
 		font-family: 'Google Sans', sans-serif;
 		font-weight: 900;
 		overflow-x: hidden;
+
+        height: clamp(5rem, 1vh, 7rem)
 	}
 
 	.header-text {
@@ -68,7 +70,7 @@
 		overflow: hidden;
 		/* border: 3px solid red; */
 		float: right;
-		right: 10vw;
+		right: 1vw;
 		line-height: 0.5;
 	}
 
@@ -77,8 +79,8 @@
 		display: block;
 		color: white;
 		text-align: center;
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 2vw;
+		padding-right: 2vw;
 		text-decoration: none;
 	}
 
@@ -150,19 +152,20 @@
 		/* border: 5px solid pink; */
 		width: 40%;
 		left: 55%;
-		top: 20%;
+		top: clamp(4rem, 12vw, 7rem);
 	}
 
 	.about-me-block {
 		position: relative;
-		
+		margin-top:300px;
         font-family: 'Google Sans', sans-serif;
 
-        border: 3px solid red;
+        /* border: 3px solid red; */
         
         left: 2%;
-        width: 50%;
-        font-size:x-large;
-
+        width: 65%;
+        font-size:xx-large;
+        font-weight: 600;
+        color: white;
 	}
 </style>
